@@ -26,18 +26,18 @@ public class Druide {
     public void fabriquerPotion(int nbDoses, int forcePotion) {
         this.nbDoses = nbDoses;
         this.forcePotion = forcePotion;
-        parler("J'ai concoctÃ© " + nbDoses + " doses de potion magique. Elle a une force de " + forcePotion + ".");
+        parler("J'ai concocté " + nbDoses + " doses de potion magique. Elle a une force de " + forcePotion + ".");
     }
 
     public void boosterGaulois(Gaulois gaulois) {
-        if (gaulois.getNom().equals("ObÃ©lix")) {
-            parler("Non, ObÃ©lix Non !... Et tu le sais trÃ¨s bien !");
+        if (gaulois.getNom().equals("Obélix")) {
+            parler("Non, Obélix Non !... Et tu le sais très bien !");
         } else if (nbDoses > 0) {
             parler("Tiens " + gaulois.getNom() + " un peu de potion magique.");
             gaulois.boirePotion(forcePotion);
             nbDoses--;
         } else {
-            parler("DÃ©solÃ©, il n'y a plus de potion !");
+            parler("Désolé, il n'y a plus de potion !");
         }
     }
 }

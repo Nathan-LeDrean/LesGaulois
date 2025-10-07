@@ -5,12 +5,12 @@ import personnages.*;
 public class TestGaulois {
 
     public static void main(String[] args) {
-        Gaulois asterix = new Gaulois("AstÃ©rix", 8);
-        Gaulois obelix = new Gaulois("ObÃ©lix", 16);
+        Gaulois asterix = new Gaulois("Astérix", 8);
+        Gaulois obelix = new Gaulois("Obélix", 16);
 
-        asterix.parler("Bonjour ObÃ©lix.");
-        obelix.parler("Bonjour AstÃ©rix. Ã‡a te dirait d'aller chasser des sangliers ?)");
-        asterix.parler("Oui trÃ¨s bonne idÃ©e.");
+        asterix.parler("Bonjour Obélix.");
+        obelix.parler("Bonjour Astérix. ça te dirait d'aller chasser des sangliers ?)");
+        asterix.parler("Oui très bonne idée.");
 
         Romain minus = new Romain("Minus", 6);
         System.out.println("Dans la forÃªt " + asterix + " et " + obelix + " tombent nez Ã  nez sur le romain " + minus.getNom() + ".");
